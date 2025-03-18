@@ -4,10 +4,12 @@ body{
     background-repeat: no-repeat;
     
 }
+
 main{
     display: flex;
     width: 100%;
 }
+
 #principal-esquerda{
     border: solid 1px;
     width: 22%;
@@ -15,12 +17,14 @@ main{
     background-size:contain;
 
 }
+
 #principal-direita{
     background-color: #2E4238;
     border: solid 1px;
     width: 82%;
     height: 99.75vh;                
 }
+
 #principal-direita header{
     font-family: 'Brittany Signature', sans-serif;
     color: white;
@@ -29,6 +33,7 @@ main{
     font-weight: 100;
     text-align: center;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -49,9 +54,11 @@ header{
     flex-direction: column;
     border-radius: 15px;
 }
+
 #espaçamento{
     margin-bottom: 7%;
 }
+
 input{
     color: white;
     outline: none;
@@ -60,12 +67,14 @@ input{
     height: 7vh;
     background-color: #7C7979;
 }
+
 .input-container {
     background-color: black; /* Cor da borda externa */
     padding: 6px; /* Espaço entre a borda preta e o input */
     display: flex;
     border-radius: 15px;
 }
+
 ::placeholder {
     color: white;
     opacity: 1; 
