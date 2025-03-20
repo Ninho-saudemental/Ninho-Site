@@ -4,26 +4,31 @@ body{
     background-repeat: no-repeat;
     
 }
+
 main{
     display: flex;
     width: 100%;
 }
+
 #principal-esquerda{
-    border: solid 1px;
+    border: none;
     width: 22%;
     background-repeat: no-repeat;
     background-size:contain;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    padding-bottom: 20%;
 }
+
 #principal-direita{
     background-color: #2E4238;
-    border: solid 1px;
+    border: none;
     width: 82%;
-    height: 99.75vh;                
+    height: 100vh;                
 }
+
 #principal-direita header{
     font-size:230%;
     margin-top: -2%;
@@ -62,9 +67,11 @@ header{
     flex-direction: column;
     border-radius: 15px;
 }
+
 #espaçamento{
     margin-bottom: 7%;
 }
+
 input{
     padding-left: 10px;
     font-family: "Itim", cursive;
@@ -75,12 +82,14 @@ input{
     height: 7vh;
     background-color: #7C7979;
 }
+
 .input-container {
     background-color: black; /* Cor da borda externa */
     padding: 6px; /* Espaço entre a borda preta e o input */
     display: flex;
     border-radius: 15px;
 }
+
 ::placeholder {
     color: white;
     opacity: 1; 
@@ -126,7 +135,7 @@ input{
     background-color: #b0c4a1;
     height: 9vh;
     left: -50px;
-    width: 60%;
+    width: 58%;
     display: inline-block;
     position: relative;
     border-color: #89B29E;
@@ -135,7 +144,7 @@ input{
 
 .botao2 {
     background-color: #b0c4a1;
-    margin-top: 16px;
+    margin-top: 13px;
     height: 9vh;
     width: 60%;
     left: 60px;
@@ -181,7 +190,7 @@ span a
     margin-left: 10%;
     margin-top: 7%;
     height: 9vh;
-    width: 125%;
+    width: 115%;
     font-size: 16px;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -201,11 +210,29 @@ span a
     margin-top: 9%;
     left: -22px;
     height: 9vh;
-    width: 125%;
-    font-size: 16px;
+    width: 110%;
+    font-size: 20px;
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: #333;
     position: relative;
     z-index: 1;
+}
+
+#cadastre
+{
+    width: 300px;
+    font-size: small;
+    font-family: "Itim", cursive;
+}
+
+#cadastre h2
+{
+    margin: 0;
+}
+
+#cadastre a
+{
+    color: #89B29E;
+    text-decoration: none;
 }
