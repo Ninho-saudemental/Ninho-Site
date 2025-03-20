@@ -4,31 +4,44 @@ body{
     background-repeat: no-repeat;
     
 }
+
 main{
     display: flex;
     width: 100%;
 }
+
 #principal-esquerda{
-    border: solid 1px;
+    border: none;
     width: 22%;
     background-repeat: no-repeat;
     background-size:contain;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
 }
+
 #principal-direita{
     background-color: #2E4238;
-    border: solid 1px;
+    border: none;
     width: 82%;
-    height: 99.75vh;                
+    height: 100vh;                
 }
+
 #principal-direita header{
-    font-family: 'Brittany Signature', sans-serif;
-    color: white;
-    font-size: 230%;
+    font-size:230%;
     margin-top: -2%;
     font-weight: 100;
     text-align: center;
 }
+
+h1
+{
+    font-family: 'Brittany Signature', sans-serif;
+    color: white;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -36,23 +49,32 @@ header{
     align-items: center;
 }
 
-#grup-inputs{
-    margin-left: -13.5%;
+#grupo-inputs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #inputs
 {
     background-color: black;
-    width: 190%;
+    width: 220%;
     display: flex;
+    
     justify-content: center;
     flex-direction: column;
     border-radius: 15px;
 }
+
 #espaçamento{
     margin-bottom: 7%;
 }
+
 input{
+    padding-left: 10px;
+    font-family: "Itim", cursive;
     color: white;
     outline: none;
     border-radius: 15px;
@@ -60,13 +82,157 @@ input{
     height: 7vh;
     background-color: #7C7979;
 }
+
 .input-container {
     background-color: black; /* Cor da borda externa */
     padding: 6px; /* Espaço entre a borda preta e o input */
     display: flex;
     border-radius: 15px;
 }
+
 ::placeholder {
     color: white;
     opacity: 1; 
-  }
+}
+
+#btns a
+{
+    font-family: "Itim", cursive;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#btns
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btns h2
+{
+    margin-top: 0;
+    height:min-content;
+}
+
+#btns button
+{
+    margin-top: 25px;
+    font-family: "Itim", cursive;
+    font-size: 25px;
+    width: 150%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #89B29E;
+    border-color: #89B29E;
+    border-style: none;
+}
+
+.botao {
+    background-color: #b0c4a1;
+    height: 9vh;
+    left: -50px;
+    width: 58%;
+    display: inline-block;
+    position: relative;
+    border-color: #89B29E;
+    border-style: none;
+}
+
+.botao2 {
+    background-color: #b0c4a1;
+    margin-top: 13px;
+    height: 9vh;
+    width: 60%;
+    left: 60px;
+    display: inline-block;
+    position: relative;
+    border-color: #89B29E;
+    border-style: none;
+    align-self: flex-end;
+    margin-right: 90px;
+}
+
+.botao button{
+    background-color: #b0c4a1;
+    height: 4vh;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+}
+
+.botao2 button{
+    background-color: #b0c4a1;
+    height: 4vh;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+}
+
+span a
+{
+    text-decoration: none;
+    font-family: "Itim", cursive;
+    font-size: x-large;
+    font-weight: 100;
+    color: #47576E;
+}
+
+#sp1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6dae5;
+    margin-left: 10%;
+    margin-top: 7%;
+    height: 9vh;
+    width: 115%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+#sp2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6dae5;
+    align-self: flex-start;
+    justify-self: right;
+    margin-top: 9%;
+    left: -22px;
+    height: 9vh;
+    width: 110%;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+#cadastre
+{
+    width: 300px;
+    font-size: small;
+    font-family: "Itim", cursive;
+}
+
+#cadastre h2
+{
+    margin: 0;
+}
+
+#cadastre a
+{
+    color: #89B29E;
+    text-decoration: none;
+}
