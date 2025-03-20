@@ -38,7 +38,8 @@ main{
 
 h1
 {
-    font-family: 'Brittany Signature', sans-serif;
+    font-family: 'Brittany Signature Script', sans-serif;
+    font-weight: 100;
     color: white;
 }
 
@@ -221,18 +222,25 @@ span a
 
 #cadastre
 {
-    width: 300px;
+    width: 400px;
     font-size: small;
     font-family: "Itim", cursive;
+    background-color: #000;
+    color: white;
+    padding: 9px;
+    border-radius: 19px;
 }
 
 #cadastre h2
 {
     margin: 0;
+    background-color: #7C7979;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 #cadastre a
 {
-    color: #89B29E;
+    color: #075831;
     text-decoration: none;
 }
