@@ -1,26 +1,21 @@
-const boxes = document.querySelectorAll('.box');
-const overlay = document.getElementById('overlay');
-let activeBox = null;
+document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll('.box');
 
-boxes.forEach(box => {
-    const expandedBox = box.querySelector('.expanded-box');
+    boxes.forEach(box => {
+        const expandedBox = document.createElement("div");
+        expandedBox.classList.add("expanded-box");
+        expandedBox.textContent = box.dataset.content || "Informação da Caixa";
+        document.body.appendChild(expandedBox);
 
-    box.addEventListener('mouseenter', () => {
-        if (activeBox !== box) {
-            if (activeBox) {
-                activeBox.querySelector('.expanded-box').style.transform = 'translate(-50%, -50%) scale(0)';
-            }
-            expandedBox.style.transform = 'translate(-50%, -50%) scale(1)';
-            overlay.style.display = 'block';
-            activeBox = box;
-        }
-    });
+        box.addEventListener("mouseenter", function () {
+            const boxRect = box.getBoundingClientRect();
+            expandedBox.style.left = `${boxRect.left + window.scrollX}px`;
+            expandedBox.style.top = `${boxRect.top + window.scrollY - expandedBox.offsetHeight - 10}px`; // Ajustado para cima da caixa
+            expandedBox.style.display = "block";
+        });
 
-    overlay.addEventListener('click', () => {
-        if (activeBox) {
-            activeBox.querySelector('.expanded-box').style.transform = 'translate(-50%, -50%) scale(0)';
-            overlay.style.display = 'none';
-            activeBox = null;
-        }
+        box.addEventListener("mouseleave", function () {
+            expandedBox.style.display = "none";
+        });
     });
 });
