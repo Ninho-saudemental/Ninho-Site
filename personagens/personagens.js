@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         box.addEventListener("mouseenter", function () {
             const boxRect = box.getBoundingClientRect();
             expandedBox.style.left = `${boxRect.left + window.scrollX}px`;
-            expandedBox.style.top = `${boxRect.top + window.scrollY - expandedBox.offsetHeight - 10}px`; // Ajustado para cima da caixa
+            expandedBox.style.top = `${boxRect.top + window.scrollY - expandedBox.offsetHeight - 10}px`; 
             expandedBox.style.display = "block";
         });
 
