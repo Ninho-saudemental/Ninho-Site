@@ -1,72 +1,21 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção de Personagens </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="personagens.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
+document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll('.box');
 
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="personagens.css">
-</head>
-<body>
-    <header>
-        <div class="navbar">
-        <div class="logo">
-            <div id="logo-img"></div>
-    </div>
-        <div class="menu-container">
-            <div class="menu-background"></div>
-            <div class="menu">
-                <a href="#">sobre nós</a>
-                <a href="#">funcionamento?</a>
-                <a href="#">chats</a>
-                <a href="#">menu</a>
-            </div>
-        </div>
-    </div>
-</header>
+    boxes.forEach(box => {
+        const expandedBox = document.createElement("div");
+        expandedBox.classList.add("expanded-box");
+        expandedBox.textContent = box.dataset.content || "Informação da Caixa";
+        document.body.appendChild(expandedBox);
 
-    <main>
-        <div id="lateral"></div>
-        <div id="main-corpo">
-            <div class="overlay" id="overlay"></div>
-            <h1 class="titulo-personagens">Personagens</h1>
-            <div class="container">
-                <div class="box" data-index="1">
-                    <div class="expanded-box">Conteúdo do personagem 1</div>
-                </div>
-                <div class="box" data-index="2">
-                    <div class="expanded-box">Conteúdo do personagem 2</div></div>
-                <div class="box" data-index="3"><div class="expanded-box">Conteúdo do personagem 3</div>
-            </div>
-                <div class="box" data-index="4">
-                    <div class="expanded-box">Conteúdo do personagem 4</div></div>
-                <div class="box" data-index="5"><div class="expanded-box">Conteúdo do personagem 5</div>
-            </div>
-                <div class="box" data-index="6">
-                    <div class="expanded-box">Conteúdo do personagem 6</div>
-                </div>
-            </div>
-        </div>
-        <div id="footer">
-            <button class="botao2">
-                <span id="sp2">
-                    <a href="https://camila12301540.github.io/Ninho/">Voltar</a>
-                </span>
-            </button>
-        </div>
-    </main>
-    
-</body>
-<script src="personagens.js"></script>
-</html>
+        box.addEventListener("mouseenter", function () {
+            const boxRect = box.getBoundingClientRect();
+            expandedBox.style.left = `${boxRect.left + window.scrollX}px`;
+            expandedBox.style.top = `${boxRect.top + window.scrollY - expandedBox.offsetHeight - 10}px`; // Ajustado para cima da caixa
+            expandedBox.style.display = "block";
+        });
+
+        box.addEventListener("mouseleave", function () {
+            expandedBox.style.display = "none";
+        });
+    });
+});
