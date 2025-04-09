@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const boxes = document.querySelectorAll('.box');
+    const boxes = document.querySelectorAll('.box1');
 
     boxes.forEach(box => {
         const expandedBox = document.createElement("div");
         expandedBox.classList.add("expanded-box");
-        expandedBox.textContent = box.dataset.content || "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+        expandedBox.textContent = box.dataset.content || "xalalalala, xalalalala";
         document.body.appendChild(expandedBox);
 
         box.addEventListener("mouseenter", function () {
@@ -19,6 +19,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll('.box2');
+
+    boxes.forEach(box => {
+        const expandedBox = document.createElement("div");
+        expandedBox.classList.add("expanded-box");
+        expandedBox.textContent = box.dataset.content || "xolololo, xolololo, xolololo";
+        document.body.appendChild(expandedBox);
+
+        box.addEventListener("mouseenter", function () {
+            const boxRect = box.getBoundingClientRect();
+            expandedBox.style.left = `${boxRect.left + window.scrollX}px`;
+            expandedBox.style.top = `${boxRect.top + window.scrollY - expandedBox.offsetHeight - 10}px`; // Ajustado para cima da caixa
+            expandedBox.style.display = "block";
+        });
+
+        box.addEventListener("mouseleave", function () {
+            expandedBox.style.display = "none";
+        });
+    });
+});
+
 // Verifica o tema salvo ou preferência do sistema
 function checkTheme() {
     const savedTheme = localStorage.getItem('theme');

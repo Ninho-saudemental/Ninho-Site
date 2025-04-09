@@ -205,6 +205,27 @@ main{
     cursor: pointer;
     outline: none;
 }
+
+.box1 {
+    width: 100%;
+    height: 60vh;
+    background-color: lightgray;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+.box2 {
+    width: 100%;
+    height: 60vh;
+    background-color: lightgray;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
 .overlay {
     position: fixed;
     top: 0;
