@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     boxes.forEach(box => {
         const expandedBox = document.createElement("div");
         expandedBox.classList.add("expanded-box");
-        expandedBox.textContent = box.dataset.content || "Informação da Caixa";
+        expandedBox.textContent = box.dataset.content || "Informação da Caixa" || "XALALALLALA";
         document.body.appendChild(expandedBox);
 
         box.addEventListener("mouseenter", function () {
