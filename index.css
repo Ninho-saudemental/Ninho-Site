@@ -99,7 +99,7 @@ main {
 }
 
 #principal-direita {
-    background-color: var(--light-primary-color);
+    background-color:#2E4238
     border: none;
     width: 82%;
     height: 100vh;   
