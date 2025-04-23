@@ -99,13 +99,15 @@ main {
 }
 
 #principal-direita {
-    background-color:#2E4238
+    background-color:#2E4238;
     border: none;
     width: 82%;
     height: 100vh;   
     display: flex;          
 }
-
+.dark-mode #lateral02{
+    background-color: #1E3127;
+}
 #principal-direita header {
     font-size: 230%;
     margin-top: -2%;
