@@ -122,6 +122,7 @@ main {
     width: 10%;
     height: 99vh;
     display: flex;
+    background-color:#2E4238;
     justify-content: center;
     align-items: flex-start;
     padding-top: 20px;
