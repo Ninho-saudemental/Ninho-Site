@@ -284,7 +284,7 @@ main{
 #footer{
     display: flex;
     z-index: 1;
-    margin-top: 40%;
+    margin-top: 48%;
     position: absolute;
     background-color: #89B29E;
     width: 100%;
