@@ -3,49 +3,55 @@ document.addEventListener("DOMContentLoaded", function () {
     let activeModal = null;
     let modalTimeout = null;
 
-    // Configuração dos boxes de personagem
+    // Configuração dos boxes de personagem - Adicionei o chat para todos os personagens
     const characters = [
         {
             id: 1,
             image: 'personagem1.jpg',
             name: 'Personagem 1',
             info: ['Idade: 25', 'Habilidade: Super força', 'Origem: Terra'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%201.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso1.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         },
         {
             id: 2,
             image: 'personagem2.jpg',
             name: 'Personagem 2',
             info: ['Idade: 30', 'Habilidade: Invisibilidade', 'Origem: Marte'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%202.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%202.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         },
         {
             id: 3,
             image: 'personagem3.jpg',
             name: 'Personagem 3',
             info: ['Idade: 22', 'Habilidade: Velocidade', 'Origem: Vênus'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%203.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%203.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         },
         {
             id: 4,
             image: 'personagem4.jpg',
             name: 'Personagem 4',
             info: ['Idade: 28', 'Habilidade: Voar', 'Origem: Júpiter'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%204.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%204.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         },
         {
             id: 5,
             image: 'personagem5.jpg',
             name: 'Personagem 5',
             info: ['Idade: 35', 'Habilidade: Telepatia', 'Origem: Saturno'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%205.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%205.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         },
         {
             id: 6,
             image: 'personagem6.jpg',
             name: 'Personagem 6',
             info: ['Idade: 40', 'Habilidade: Teletransporte', 'Origem: Plutão'],
-            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%206.html'
+            link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%206.html',
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
         }
     ];
 
@@ -70,9 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         <ul>
                             ${character.info.map(item => `<li>${item}</li>`).join('')}
                         </ul>
-                        <a href="${character.link}" class="character-link" target="_blank">
-                            <button class="btn btn-primary">Ver mais</button>
-                        </a>
+                        <div class="button-container">
+                            <a href="${character.link}" class="character-link" target="_blank">
+                                <button class="btn btn-primary">Ver mais</button>
+                            </a>
+                            <a href="${character.chat}" class="character-chat" target="_blank">
+                                <button class="btn btn-chat">Conversar</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             `;
