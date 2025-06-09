@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 1',
             info: ['Idade: 25', 'Habilidade: Super força', 'Origem: Terra'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso1.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/cha1t'
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 2',
             info: ['Idade: 30', 'Habilidade: Invisibilidade', 'Origem: Marte'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%202.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat2'
         },
         {
             id: 3,
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 3',
             info: ['Idade: 22', 'Habilidade: Velocidade', 'Origem: Vênus'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%203.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat3'
         },
         {
             id: 4,
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 4',
             info: ['Idade: 28', 'Habilidade: Voar', 'Origem: Júpiter'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%204.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat4'
         },
         {
             id: 5,
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 5',
             info: ['Idade: 35', 'Habilidade: Telepatia', 'Origem: Saturno'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%205.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat5'
         },
         {
             id: 6,
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 6',
             info: ['Idade: 40', 'Habilidade: Teletransporte', 'Origem: Plutão'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso%20-%206.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/chat'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat6'
         }
     ];
 
