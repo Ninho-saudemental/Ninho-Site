@@ -1,0 +1,643 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #517061;
+}
+
+.navbar {
+    display: flex;
+    margin-left: -1.7%;
+    align-items: center;
+    height: 11vh;
+    min-height: 70px; 
+    background-color: #2E4238;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    width: 7%;
+    min-width: 50px;
+    height: 100%;
+}
+
+#logo-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(logo.png); /* Imagem normal */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.menu-container {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-background {
+    position: absolute;
+    top: 0;
+    left: -36px; 
+    right: 0;
+    width: 103%;
+    height: 82%; 
+    background-color: #89B29E;
+    border-top-right-radius: 30px;
+    z-index: 0;
+    margin-top: auto;
+    bottom: 0;
+}
+
+.menu {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw; 
+    padding-right: 3vw;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Itim", cursive;
+    white-space: nowrap;
+    padding: 5px 0;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #333;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2E4238;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+#lateral{
+    background-color: #2E4238;
+    height: 89vh;
+    width: 1.2%;
+    position: absolute;
+    z-index: 10;
+}
+#main-corpo{
+    width: 100%;
+    display: flex;
+    height: 89vh;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+.botao2 {
+    background-color: #b0c4a1;
+    height: 9vh;
+    width: 10%;
+    margin-bottom: 5%;
+    display: inline-block;
+    position: absolute;
+    border-color: #89B29E;
+    border-style: none;
+    border-radius: 15px;
+    align-self: flex-end;
+    margin-left: 80%;
+}
+.botao2 button{
+    background-color: #b0c4a1;
+    height: 4vh;
+    width: 30%;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+}
+#sp2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6dae5;
+    margin-left: -20%;
+    margin-top: 7%;
+    height: 9vh;
+    border-radius: 15px;
+    width: 115%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+#sp2 a{
+    font-size: 130%;
+    text-decoration: none;
+    color: #47576E;
+}
+#footer{
+    display: flex;
+    z-index: 1000;
+    margin-top: 41.5%;
+    position: absolute;
+    background-color: #89B29E;
+    width: 100%;
+    height: 6.2vh;
+}
+
+.header
+{
+    height: 100%;
+    width: 20%;
+    background-color: #6E9080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header #titulo
+{
+    background-color: #80A795;
+    align-self: flex-end;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.header h3
+{
+    color: white;
+    font-family: 'Itim';
+    display: flex;
+}
+
+.header #user
+{
+    align-self: flex-end;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px;
+    border-color: #5D7B6C;
+}
+
+.header button
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline-style: none;
+    background-color: #6E9080;
+}
+
+.header #chat
+{
+    align-self: flex-end;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px;
+    border-color: #5D7B6C;
+}
+
+.header #tema
+{
+    align-self: flex-end;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px;
+    border-color: #5D7B6C;
+}
+
+.main
+{
+    width: 100vw;
+    height: 80vh;
+}
+
+.main .modalUser {
+    display: none;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0,0,0,0.4);
+    left: 16.6vw;
+    top: 11vh;
+    z-index: 0;
+}
+
+.modal-content-User {
+    background-color: #517061;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content-User #usuario
+{
+    background-color: #6E9080;
+    width: 102.5%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    padding-left: 15px;
+    font-family: 'Itim';
+    color: white;
+}
+
+.modal-content-User #redSenha
+{
+    height: 70px;
+    width: 102.5%;
+    border-bottom: solid 1px;
+    margin-left: -20px;
+    margin-top: -8px;
+    margin-bottom: 0;
+    border-color: #5F8673;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+.modal-content-User #telefone
+{
+    height: 70px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+#telefone-div
+{
+    width: 102.5%;
+    margin-left: -20px;
+    border-bottom: solid 1px;
+    border-color: #5F8673;
+}
+
+#telefone-div input
+{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-left: 15px;
+    margin-bottom: 16.5px;
+    padding-left: 15px;
+}
+
+#text
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#Salvar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-left: 40px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}
+
+#apelido-div
+{
+    width: 102.5%;
+    margin-left: -20px;
+    border-bottom: solid 1px;
+    border-color: #5F8673;
+}
+
+#apelido-div input
+{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-left: 15px;
+    margin-bottom: 16.5px;
+    padding-left: 15px;
+}
+
+.modal-content-User #apelido
+{
+    height: 70px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+#closeModalBtnInsideUser
+{
+    width: 100px;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}
+
+.main .ModalChat {
+    display: none;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0,0,0,0.4);
+    left: 16.6vw;
+    top: 11vh;
+    z-index: 0;
+}
+
+.modal-content-Chat {
+    background-color: #517061;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content-Chat #Chats
+{
+    background-color: #6E9080;
+    width: 102.5%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    padding-left: 15px;
+    font-family: 'Itim';
+    color: white;
+}
+
+.modal-content-Chat #telefone
+{
+    height: 70px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+#telefone-div
+{
+    width: 102.5%;
+    margin-left: -20px;
+    border-bottom: solid 1px;
+    border-color: #5F8673;
+}
+
+#telefone-div input
+{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-left: 15px;
+    margin-bottom: 16.5px;
+    padding-left: 15px;
+}
+
+#Salvar
+{
+    margin-left: 40px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}
+
+#apelido-div
+{
+    width: 102.5%;
+    margin-left: -20px;
+    border-bottom: solid 1px;
+    border-color: #5F8673;
+}
+
+#apelido-div input
+{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-left: 15px;
+    margin-bottom: 16.5px;
+    padding-left: 15px;
+}
+
+.modal-content-Chat #apelido
+{
+    height: 70px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+#closeModalBtnInsideChat
+{
+    width: 100px;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}
+
+#desc-div
+{
+    width: 102.5%;
+    margin-left: -20px;
+    border-bottom: solid 1px;
+    border-color: #5F8673;
+}
+
+#desc
+{
+    height: 70px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Itim';
+    text-decoration: none;
+}
+
+#desc-div textarea
+{
+    width: 24.5%;
+    height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    margin-left: 15px;
+    margin-bottom: 16.5px;
+    padding-left: 15px;
+}
+
+#MudarTema
+{
+    width: 150px;
+    margin-left: -20;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}
+
+.modal-content-Tema #Tema
+{
+    background-color: #6E9080;
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-family: 'Itim';
+    color: white;
+}
+
+.main .ModalTema {
+    display: none;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(0,0,0,0.4);
+    left: 16.6vw;
+    top: 11vh;
+    z-index: 0;
+}
+
+.modal-content-Tema {
+    background-color: #517061;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#closeModalBtnInsideTema
+{
+    width: 100px;
+    height: 30px;
+    font-family: 'Itim';
+    outline: none;
+    border: none;
+    background-color: #6E9080;
+    color: white;
+    font-size: large;
+}

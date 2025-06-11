@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="configuracoes.css">
+    <link rel="icon" type="image/x-icon" href="logo_mod.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://camila12301540.github.io/Ninho/">
+                    <div id="logo-img"></div>
+                </a>
+            </div>
+            <div class="menu-container">
+            <div class="menu-background"></div>
+            <br>
+            <div class="menu">
+                <a href="#">sobre nós</a>
+                <a href="#">chats</a>
+                <a href="#">menu</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div id="lateral"></div>
+        <div id="main-corpo">
+            <div class="overlay" id="overlay"></div>
+            <header class="header">
+                <div id="titulo">
+                    <h3>Configurações</h3>
+                </div>
+                <div id="user">
+                    <button>
+                        <h3>Usuário</h3>
+                    </button>
+                </div>
+                <div id="chat">
+                    <button>
+                        <h3>Chat</h3>
+                    </button>
+                </div>
+                <div id="tema">
+                    <button>
+                        <h3>Tema</h3>
+                    </button>
+                </div>
+            </header>
+            <header class="main">
+                <div id="myModalUser" class="modalUser">
+                    <div class="modal-content-User">
+                        <h3 id="usuario">Usuário</h3>
+                        <a href="https://camila12301540.github.io/Ninho/redSenha/redSenha" id="redSenha">
+                            <h3>Redefinir senha</h3>
+                        </a>
+                        <div id="telefone-div">
+                            <h3 id="telefone">Acrescentar número de telefone:</h3>
+                            <div>
+                                <input type="tel">
+                                <button id="Salvar">Salvar</button>
+                            </div>
+                        </div>
+                        <div id="apelido-div">
+                            <h3 id="apelido">Acrescentar apelido:</h3>
+                            <div>
+                                <input type="tel">
+                                <button id="Salvar">Salvar</button>
+                            </div>
+                        </div>
+                        <BR></BR>
+                        <button id="closeModalBtnInsideUser">Fechar</button>
+                    </div>
+                </div>
+                <div id="myModalChat" class="ModalChat">
+                    <div class="modal-content-Chat">
+                        <h3 id="Chats">Chats</h3>
+                        <div id="desc-div">
+                            <h3 id="desc">Descrição:</h3>
+                            <div id="text">
+                                <textarea></textarea>
+                                <button id="Salvar">Salvar</button>
+                            </div>
+                        </div>
+                        <BR></BR>
+                        <button id="closeModalBtnInsideChat">Fechar</button>
+                    </div>
+                </div>
+                <div id="myModalTema" class="ModalTema">
+                    <div class="modal-content-Tema">
+                        <h3 id="Tema">Tema</h3>
+                        <button id="MudarTema">Mudar o tema</button>
+                        <BR></BR>
+                        <button id="closeModalBtnInsideTema">Fechar</button>
+                    </div>
+                </div>
+            </header>     
+        </div>
+        <div id="footer"></div>
+        </div>
+    </main>
+</body>
+<script src="configuracoes.js"></script>
+</html>
