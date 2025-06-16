@@ -59,8 +59,14 @@ body.dark-mode #btns button {
     background-color: #C8C8C8;
     color: black;
 }
+.dark-mode #cadastreProfissional h2{
+    color: white;
+}
 .dark-mode #cadastre h2 a{
     color: #518B18;
+}
+.dark-mode #cadastreProfissional h2 a{
+    color: #589167;
 }
 body.dark-mode .botao, 
 body.dark-mode .botao2 {
@@ -294,6 +300,27 @@ span a
     text-decoration: none;
 }
 /* Adicione estas regras ao seu CSS existente */
+
+#cadastreProfissional
+{
+    width: 500px;
+    font-size: small;
+    font-family: "Itim", cursive;
+}
+
+#cadastreProfissional h2
+{   
+    font-weight: 100;
+    margin: 0;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+#cadastreProfissional a
+{
+    color: #589167;
+    text-decoration: none;
+}
 
 main {
     display: flex;
