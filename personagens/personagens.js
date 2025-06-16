@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Personagem 1',
             info: ['Idade: 25', 'Habilidade: Super força', 'Origem: Terra'],
             link: 'https://camila12301540.github.io/Ninho/info_perso/info_perso1.html',
-            chat: 'https://camila12301540.github.io/Ninho/chat/cha1t'
+            chat: 'https://camila12301540.github.io/Ninho/chat/chat1'
         },
         {
             id: 2,
